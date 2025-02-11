@@ -1,0 +1,177 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0f37e9e1;
+    color: white;
+    padding: 20px;
+}
+
+.menu-header {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.itens-menu {
+    margin: 0 15px;
+}
+
+.itens-menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.itens-menu a:hover {
+    color: #1d299c;
+    background-color: #f2f2f7;
+    text-decoration: none;
+}
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 50px 0;
+}
+
+h2 {
+    color: #1d299c;
+}
+
+/* Adicionando uma cor diferente para as seções */
+#contato { background-color: #e7f7f2; }
+#experiencia { background-color: #f2f2f7; }
+#educacao { background-color: #f7e7f2; }
+#hard-skills { background-color: #e7f2f7; }
+#soft-skills { background-color: #f2f7e7; }
+
+
+footer{
+    position: relative;
+    top: 2rem;
+    background-color: #2353f0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+}
+
+  
+footer.visible {
+    bottom: 0; /* Mostra o footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    color: #ccc;
+}
+
+.footer-column p,
+.footer-column ul {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.footer-links {
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.footer h1 {
+    color: #333;
+}
+
+
+/* Responsivo para telas menores que 480px */
+@media (max-width: 480px) {
+    footer {
+        position: relative; 
+        text-align: center;
+        padding: 10px 0;
+        width: 100%; 
+        margin-top: 3%;
+        z-index: 5; 
+        background-color: #2331f0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+        justify-content: space-around;
+        bottom: 0; 
+    }
+
+    footer.visible {
+        bottom: 0; /* Mostra o footer */
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p,
+    .footer-column ul {
+        font-size: 12px;
+    }
+
+    .footer-links li {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
